@@ -232,12 +232,16 @@ export default function Landing() {
                   <td className="border border-black p-2">
                     <LowercaseWrapper>link</LowercaseWrapper>
                   </td>
-                  <td className="border border-black p-2">
-                    <a href="https://lu.ma/roa2ak6k" className="underline text-[#660099]">
-                      <LowercaseWrapper>
-                        https://lu.ma/roa2ak6k
-                      </LowercaseWrapper>
-                    </a>
+                  <td className="border border-black p-2 text-gray-500">
+                    <span className="line-through">
+                      <a href="https://lu.ma/roa2ak6k" className="underline text-[#660099]">
+                        <LowercaseWrapper>
+                          https://lu.ma/roa2ak6k
+                        </LowercaseWrapper>
+                      </a>
+                    </span>
+                    <br />
+                    <span>(this meetup has already passed)</span>
                   </td>
                 </tr>
                 <tr>
