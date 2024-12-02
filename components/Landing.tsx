@@ -161,7 +161,62 @@ export default function Landing() {
                 debugMode ? "text-2xl font-bold" : "text-xl font-bold underline"
               } mb-2`}
             >
-              <LowercaseWrapper>upcoming meetup</LowercaseWrapper>
+              <LowercaseWrapper>upcoming meetup: optimizing rag: leveraging re-ranking and llms for superior results
+              </LowercaseWrapper>
+            </h2>
+            <table className="w-full border-collapse border border-black">
+              <tbody>
+                <tr>
+                  <td className="border border-black p-2">
+                    <LowercaseWrapper>date</LowercaseWrapper>
+                  </td>
+                  <td className="border border-black p-2">
+                    <LowercaseWrapper>dec 12, 5:30-8:30pm</LowercaseWrapper>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border border-black p-2">
+                    <LowercaseWrapper>location</LowercaseWrapper>
+                  </td>
+                  <td className="border border-black p-2">
+                    <LowercaseWrapper>375 alabama st suite 410, san francisco, ca</LowercaseWrapper>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border border-black p-2">
+                    <LowercaseWrapper>link</LowercaseWrapper>
+                  </td>
+                  <td className="border border-black p-2">
+                    <a href="https://forms.fillout.com/t/kfN2K6maXQus" className="underline text-[#660099]">
+                      <LowercaseWrapper>
+                      https://lu.ma/35kxjlh7
+                      </LowercaseWrapper>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border border-black p-2">
+                    <LowercaseWrapper>agenda</LowercaseWrapper>
+                  </td>
+                  <td className="border border-black p-2">
+                    <>
+                      <LowercaseWrapper>5:30 pm - 6:00 pm: registration and networking</LowercaseWrapper><br/>
+                      <LowercaseWrapper>6:00 pm - 7:15 pm: technical presentations</LowercaseWrapper><br/>
+                      <LowercaseWrapper>7:15 pm - 9:00 pm: q&a and extended networking</LowercaseWrapper>
+                    </>
+                    </td>
+                    </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section className="mb-8">
+            <h2
+              className={`${
+                debugMode ? "text-2xl font-bold" : "text-xl font-bold underline"
+              } mb-2`}
+            >
+              <LowercaseWrapper>previous meetup: embeddings at scale</LowercaseWrapper>
             </h2>
             <table className="w-full border-collapse border border-black">
               <tbody>
@@ -200,6 +255,8 @@ export default function Landing() {
               </tbody>
             </table>
           </section>
+
+          
 
           <section className="mb-8">
             <div>
