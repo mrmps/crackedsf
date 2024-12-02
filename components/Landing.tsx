@@ -187,7 +187,7 @@ export default function Landing() {
                     <LowercaseWrapper>link</LowercaseWrapper>
                   </td>
                   <td className="border border-black p-2">
-                    <a href="https://forms.fillout.com/t/kfN2K6maXQus" className="underline text-[#660099]">
+                    <a href="https://lu.ma/35kxjlh7" className="underline text-[#660099]">
                       <LowercaseWrapper>
                       https://lu.ma/35kxjlh7
                       </LowercaseWrapper>
