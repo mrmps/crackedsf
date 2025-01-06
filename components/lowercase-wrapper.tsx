@@ -12,14 +12,14 @@ export function LowercaseWrapper({ children, speed = 100 }: LowercaseWrapperProp
 
   return (
     <span 
-      className="inline-block whitespace-pre-wrap break-words font-sans text-base overflow-hidden"
+      className="inline-block whitespace-pre-wrap break-normal font-sans text-base overflow-hidden"
       style={{ 
         '--total-chars': totalChars,
         '--animation-duration': `${animationDuration}s`,
       } as CSSProperties}
     >
       {words.map((word, wordIndex) => (
-        <span key={wordIndex} className="inline-block">
+        <span key={wordIndex} className="inline-block whitespace-nowrap">
           {word.split('').map((char, charIndex) => {
             const overallIndex = words.slice(0, wordIndex).join('').length + charIndex
             return (

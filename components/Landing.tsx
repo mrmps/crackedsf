@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { LowercaseWrapper } from "./lowercase-wrapper";
 
 export default function Landing() {
   const [debugMode, setDebugMode] = useState(false);
@@ -37,9 +36,7 @@ export default function Landing() {
             >
               crackedsf
             </h1>
-            <div>
-              monthly meetups for cracked ai/ml engineers in sf
-            </div>
+            <div>monthly meetups for cracked ai/ml engineers in sf</div>
           </div>
         </header>
 
@@ -60,7 +57,7 @@ export default function Landing() {
                 debugMode ? "bg-black" : "bg-white"
               }`}
             ></div>
-            <LowercaseWrapper>debug mode</LowercaseWrapper>
+            debug mode
           </label>
         </div>
 
@@ -71,21 +68,17 @@ export default function Landing() {
                 debugMode ? "text-2xl font-bold" : "text-xl font-bold underline"
               } mb-2`}
             >
-              <LowercaseWrapper>about crackedsf</LowercaseWrapper>
+              about crackedsf
             </h2>
             <div className="mb-4">
-              <LowercaseWrapper>
-                crackedsf is dedicated to advanced ai/ml engineering in the
-                sf/bay area. our mission is to tackle challenging problems and
-                foster continuous learning.
-              </LowercaseWrapper>
+              crackedsf is dedicated to advanced ai/ml engineering in the
+              sf/bay area. our mission is to tackle challenging problems and
+              foster continuous learning.
             </div>
             <div>
-              <LowercaseWrapper>
-                we feature top-tier talks by industry leaders/cracked engineers,
-                focusing on the latest advancements in ai/ml engineering and
-                their practical applications.
-              </LowercaseWrapper>
+              we feature top-tier talks by industry leaders/cracked engineers,
+              focusing on the latest advancements in ai/ml engineering and
+              their practical applications.
             </div>
           </section>
 
@@ -95,7 +88,7 @@ export default function Landing() {
                 debugMode ? "text-2xl font-bold" : "text-xl font-bold underline"
               } mb-2`}
             >
-              <LowercaseWrapper>topics we crack</LowercaseWrapper>
+              topics we crack
             </h2>
             <ul
               className={`${
@@ -103,54 +96,34 @@ export default function Landing() {
               } pl-4`}
             >
               <li>
-                <LowercaseWrapper>
-                  large language models and scaling challenges
-                </LowercaseWrapper>
+                large language models and scaling challenges
               </li>
               <li>
-                <LowercaseWrapper>
-                  vector databases architecture and optimization
-                </LowercaseWrapper>
+                vector databases architecture and optimization
               </li>
               <li>
-                <LowercaseWrapper>
-                  distributed ai training and inference
-                </LowercaseWrapper>
+                distributed ai training and inference
               </li>
               <li>
-                <LowercaseWrapper>
-                  ml infrastructure and optimization
-                </LowercaseWrapper>
+                ml infrastructure and optimization
               </li>
               <li>
-                <LowercaseWrapper>
-                  advanced nlp and computer vision techniques
-                </LowercaseWrapper>
+                advanced nlp and computer vision techniques
               </li>
               <li>
-                <LowercaseWrapper>
-                  cutting-edge ml algorithms and architectures
-                </LowercaseWrapper>
+                cutting-edge ml algorithms and architectures
               </li>
               <li>
-                <LowercaseWrapper>
-                  novel llm-empowered interfaces
-                </LowercaseWrapper>
+                novel llm-empowered interfaces
               </li>
               <li>
-                <LowercaseWrapper>
-                  ai/ml system design and engineering
-                </LowercaseWrapper>
+                ai/ml system design and engineering
               </li>
               <li>
-                <LowercaseWrapper>
-                  ai agent design and implementation
-                </LowercaseWrapper>
+                ai agent design and implementation
               </li>
               <li>
-                <LowercaseWrapper>
-                  solving internet-scale problems
-                </LowercaseWrapper>
+                solving internet-scale problems
               </li>
             </ul>
           </section>
@@ -161,113 +134,58 @@ export default function Landing() {
                 debugMode ? "text-2xl font-bold" : "text-xl font-bold underline"
               } mb-2`}
             >
-              <LowercaseWrapper>upcoming meetup: optimizing rag: leveraging re-ranking and llms for superior results
-              </LowercaseWrapper>
+              upcoming meetup: optimizing rag: leveraging re-ranking and llms
+              for superior results
             </h2>
-            <table className="w-full border-collapse border border-black">
-              <tbody>
-                <tr>
-                  <td className="border border-black p-2">
-                    <LowercaseWrapper>date</LowercaseWrapper>
-                  </td>
-                  <td className="border border-black p-2">
-                    <LowercaseWrapper>dec 12, 5:30-8:30pm</LowercaseWrapper>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border border-black p-2">
-                    <LowercaseWrapper>location</LowercaseWrapper>
-                  </td>
-                  <td className="border border-black p-2">
-                    <LowercaseWrapper>375 alabama st suite 410, san francisco, ca</LowercaseWrapper>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border border-black p-2">
-                    <LowercaseWrapper>link</LowercaseWrapper>
-                  </td>
-                  <td className="border border-black p-2">
-                    <a href="https://lu.ma/35kxjlh7" className="underline text-[#660099]">
-                      <LowercaseWrapper>
-                      https://lu.ma/35kxjlh7
-                      </LowercaseWrapper>
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border border-black p-2">
-                    <LowercaseWrapper>agenda</LowercaseWrapper>
-                  </td>
-                  <td className="border border-black p-2">
-                    <>
-                      <LowercaseWrapper>5:30 pm - 6:00 pm: registration and networking</LowercaseWrapper><br/>
-                      <LowercaseWrapper>6:00 pm - 7:15 pm: technical presentations</LowercaseWrapper><br/>
-                      <LowercaseWrapper>7:15 pm - 9:00 pm: q&a and extended networking</LowercaseWrapper>
-                    </>
+            {/* added overflow-x-auto wrapper */}
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse border border-black">
+                <tbody>
+                  <tr>
+                    <td className="border border-black p-2">
+                      date
                     </td>
-                    </tr>
-              </tbody>
-            </table>
-          </section>
-
-          <section className="mb-8">
-            <h2
-              className={`${
-                debugMode ? "text-2xl font-bold" : "text-xl font-bold underline"
-              } mb-2`}
-            >
-              <LowercaseWrapper>previous meetup: embeddings at scale</LowercaseWrapper>
-            </h2>
-            <table className="w-full border-collapse border border-black">
-              <tbody>
-                <tr>
-                  <td className="border border-black p-2">
-                    <LowercaseWrapper>date</LowercaseWrapper>
-                  </td>
-                  <td className="border border-black p-2">
-                    <LowercaseWrapper>sep 19, 5:45-8:45pm</LowercaseWrapper>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border border-black p-2">
-                    <LowercaseWrapper>link</LowercaseWrapper>
-                  </td>
-                  <td className="border border-black p-2 text-gray-500">
-                    <span className="line-through">
-                      <a href="https://lu.ma/roa2ak6k" className="underline text-[#660099]">
-                        <LowercaseWrapper>
-                          https://lu.ma/roa2ak6k
-                        </LowercaseWrapper>
+                    <td className="border border-black p-2">
+                      dec 12, 5:30-8:30pm
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-black p-2">
+                      location
+                    </td>
+                    <td className="border border-black p-2">
+                      375 alabama st suite 410, san francisco, ca
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-black p-2">
+                      link
+                    </td>
+                    <td className="border border-black p-2">
+                      <a
+                        href="https://lu.ma/35kxjlh7"
+                        className="underline text-[#660099]"
+                      >
+                        https://lu.ma/35kxjlh7
                       </a>
-                    </span>
-                    <br />
-                    <span>(this meetup has already passed)</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border border-black p-2">
-                    <LowercaseWrapper>talks</LowercaseWrapper>
-                  </td>
-                  <td className="border border-black p-2">
-                    <LowercaseWrapper>
-                      charles frye on embedding spaces, amog kamsetty on llm
-                      optimization, bin fan on ml caching, michael ryaboy on
-                      temporal similarity search
-                    </LowercaseWrapper>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-
-          
-
-          <section className="mb-8">
-            <div>
-              <LowercaseWrapper>
-                we aim for monthly meetups. the format may evolve as we learn
-                what works best for our community of cracked engineers.
-              </LowercaseWrapper>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-black p-2">
+                      agenda
+                    </td>
+                    <td className="border border-black p-2">
+                      <>
+                        5:30 pm - 6:00 pm: registration and networking
+                        <br />
+                        6:00 pm - 7:15 pm: technical presentations
+                        <br />
+                        7:15 pm - 9:00 pm: q&a and extended networking
+                      </>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </section>
 
@@ -277,19 +195,76 @@ export default function Landing() {
                 debugMode ? "text-2xl font-bold" : "text-xl font-bold underline"
               } mb-2`}
             >
-              <LowercaseWrapper>join our mailing list or apply to speak</LowercaseWrapper>
+              previous meetup: embeddings at scale
+            </h2>
+            {/* added overflow-x-auto wrapper */}
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse border border-black">
+                <tbody>
+                  <tr>
+                    <td className="border border-black p-2">
+                      date
+                    </td>
+                    <td className="border border-black p-2">
+                      sep 19, 5:45-8:45pm
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-black p-2">
+                      link
+                    </td>
+                    <td className="border border-black p-2 text-gray-500">
+                      <span className="line-through">
+                        <a
+                          href="https://lu.ma/roa2ak6k"
+                          className="underline text-[#660099]"
+                        >
+                          https://lu.ma/roa2ak6k
+                        </a>
+                      </span>
+                      <br />
+                      <span>(this meetup has already passed)</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-black p-2">
+                      talks
+                    </td>
+                    <td className="border border-black p-2">
+                      charles frye on embedding spaces, amog kamsetty on llm
+                      optimization, bin fan on ml caching, michael ryaboy on
+                      temporal similarity search
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section className="mb-8">
+            <div>
+              we aim for monthly meetups. the format may evolve as we learn
+              what works best for our community of cracked engineers.
+            </div>
+          </section>
+
+          <section className="mb-8">
+            <h2
+              className={`${
+                debugMode ? "text-2xl font-bold" : "text-xl font-bold underline"
+              } mb-2`}
+            >
+              join our mailing list or apply to speak
             </h2>
             <div className="mb-4">
-              <LowercaseWrapper>
-                stay updated with our latest events and news. join our mailing
-                list and never miss an update!
-              </LowercaseWrapper>
+              stay updated with our latest events and news. join our mailing
+              list and never miss an update!
             </div>
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSecmoXqyezFWJ-lcfW36fr_sU9KQQpZSfuu-mC2wzEBDrnm8w/viewform?usp=sf_link"
               className="underline text-[#660099]"
             >
-              <LowercaseWrapper>sign up here</LowercaseWrapper>
+              sign up here
             </a>
           </section>
         </main>
@@ -300,9 +275,7 @@ export default function Landing() {
           } text-sm`}
         >
           <div>
-            <LowercaseWrapper>
-              crackedsf v0.1.0 | powered by caffeine and curiosity
-            </LowercaseWrapper>
+            crackedsf v0.1.0 | powered by caffeine and curiosity
           </div>
           <div>
             inspired by{" "}
@@ -319,7 +292,7 @@ export default function Landing() {
           </div>
           <div className="mt-2">
             <a href="https://lu.ma/roa2ak6k" className="underline mr-4">
-              <LowercaseWrapper>rsvp for next meetup</LowercaseWrapper>
+              rsvp for next meetup
             </a>
           </div>
         </footer>
